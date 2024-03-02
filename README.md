@@ -18,15 +18,14 @@ The repository is organized into folders based on the type of DSA topic they cov
 I welcome contributions to this repository! If you'd like to add a problem, improve existing solutions, or suggest enhancements, please follow these guidelines:
 
 1. **Adding a New Problem:**
-   - Ensure the problem is not already in the repository.
+   - Ensure the problem is not already in the repository in the language in which you intend to program it in.
      - If it is you may add it, but emphasize it as a new version of an existing problem.
-   - Add the problem under the relevent DSA topic folder if it exists
+   - Add the problem under the relevent languages and then the relevant DSA topic folder if it exists
      - Else create a new folder under the relevant DSA topic.
    - Add a clear and concise problem statement, and the solution.
    - Feel free to program the problems in the problem of your choosing
 2. **Improving Existing Solutions:**
    - Provide a clear explanation of your improvements or updates.
-   - Update the README file if necessary to reflect your changes.
 3. **General Guidelines:**
    - Please adhere to coding standards and include comments in your code for clarity.
    - Ensure your code is tested and correctly solves the problem.
