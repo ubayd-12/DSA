@@ -14,3 +14,7 @@
   - Add it to the visited list
   - Explore its neighbors and for those who have not been visited add them to the queue
 - Using the deque class from the collections library
+- Remember three things:
+  - Pop
+  - Check if visited, and if not
+  - Add neighbors to queue
