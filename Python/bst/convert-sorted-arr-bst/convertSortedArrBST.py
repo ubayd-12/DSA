@@ -15,3 +15,22 @@ def sortedArrayToBST(nums):
         root.right = sortedArrayToBST(nums[mid+1:])
         return root
     
+def inorderTraversal(root):
+    return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right) if root else []
+
+test_cases = [
+    [],
+    [1],
+    [1, 2],
+    [1, 2, 3],
+    [1, 2, 3, 4],
+    [1, 2, 3, 4, 5],
+    [-10, -3, 0, 5, 9],
+    [1, 3, 5, 7, 9, 11, 13, 15]
+]
+
+for i, test in enumerate(test_cases):
+    print(f"Test case {i+1}: Original array: {test}")
+    root = sortedArrayToBST(test)
+    result = inorderTraversal(root)
+    print(f"          In-order traversal: {result}\n")
