@@ -1,5 +1,5 @@
 from collections import defaultdict
-def isAnagram(s, t):
+def isAnagramHashmap(s, t):
         sD = defaultdict(int)
         for letter in s:
             sD[letter]+=1
@@ -12,4 +12,11 @@ def isAnagram(s, t):
                 return False
         return True
 
-print(isAnagram("anagram", "nagaram"))
+
+def isAnagramSort(s, t):
+    sSorted = ''.join(sorted(s))
+    tSorted = ''.join(sorted(t))
+    return sSorted == tSorted
+
+print(isAnagramHashmap("anagram", "nagaram"))
+print(isAnagramSort("anagram", "nagaram"))
