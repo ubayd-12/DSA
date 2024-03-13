@@ -1,34 +1,26 @@
-# LeetCode Problem: Validate Binary Tree
+# LeetCode Problem: Convert Sorted Array to Binary Search Tree
 
 ## Link:
 
-- [LeetCode Problem Link](https://leetcode.com/problems/validate-binary-search-tree/)
+- [LeetCode Problem Link](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
 ## Difficulty:
 
-- Medium
+- Easy
 
 ## Key Concepts:
 
 1. BST
-2. DFS
 
 ## Things Learned:
 
-- BST node can be thought of as having bounds:
-  - The root node is non bounded (can take any value)
-  - Vals to the left of a node are bounded as:
-    - Max: Parent
-    - Min: Some local lower bound (inherited from ancestors)
-  - Vals to the right of a node are bounded as:
-    - Max: Some local upper bound (inherited from ancestors)
-    - Min: Parent
+- The most 'avg' el is in the center of a sorted array
+- Everything less than that el should be left of root
+- Everything greater than that el should be right of root
+- Recurisvely call left and right hand partion of the array on either half, setting the midpoint to said trees root as you recurse
 
 ## Solution Summary:
 
-- Helper
-  - Takes: node, lower bound, upper bound
-  - Compare each nodes to see if it lies within these bounds
-  - When recursing down the left it ensures that the upper bound is set to parent and lower stands
-  - When recursing down the right it ensures that the lower bound is set to parent and upper bound stands
-- Call helper with root and set bounds infintely maximum and minimum
+- Base case returns None (i.e an empty array is Null)
+- Find midpoint and create a TreeNode using said val
+  - Set the left chi
